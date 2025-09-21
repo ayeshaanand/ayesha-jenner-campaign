@@ -1,3 +1,203 @@
-<div class="mascot">
-  <div style="font-size: 64px; margin-bottom: 16px;">🐂</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Ayesha Anand | Jenner House x Kings InterHigh Campaign</title>
+    <meta name="description" content="A bold, modern student council campaign for Jenner House at Kings InterHigh. Join the movement – strong as the bull."/>
+    <style>
+      :root{ --blue-900:#0a2a6b; --blue-800:#123b8a; --blue-700:#1850c2; --blue-600:#1f6bff; --blue-500:#2f7dff; --blue-300:#7bb0ff; --ink:#0f1a2a; --ink-2:#24334b; --sky:#eaf2ff; --white:#ffffff; --glow:#69a0ff55; --accent:#00d0ff; }
+      *{box-sizing:border-box}
+      html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--sky),#f7fbff);color:var(--ink);font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+      a{color:var(--blue-700);text-decoration:none}
+      a:hover{text-decoration:underline}
+      .nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.2) blur(8px);background:linear-gradient(90deg,var(--white)aa,var(--white)66);border-bottom:1px solid #dfe9ff}
+      .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:14px 20px}
+      .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+      .brand .badge{font-size:12px;background:linear-gradient(90deg,var(--blue-700),var(--accent));padding:3px 10px;border-radius:999px;color:#fff;font-weight:700}
+      .logo{width:38px;height:38px;border-radius:10px;background:radial-gradient(60% 60% at 40% 40%,#6db1ff,#2b64ff 60%,#0a2a6b);box-shadow:0 6px 18px #1f6bff44;display:grid;place-items:center;color:#fff;font-size:20px}
+      .hero{position:relative;overflow:hidden}
+      .hero-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:48px 20px 28px}
+      .tag{display:inline-flex;align-items:center;gap:8px;background:var(--white);color:var(--blue-800);border:1px solid #d7e5ff;padding:8px 12px;border-radius:999px;font-weight:700;box-shadow:0 6px 22px #2b64ff15}
+      .tag .dot{width:10px;height:10px;border-radius:50%;background:var(--blue-600);box-shadow:0 0 0 6px #2b64ff22}
+      h1{font-size:clamp(32px,4.2vw,56px);line-height:1.05;margin:14px 0 10px;color:var(--blue-900)}
+      .sub{font-size:clamp(16px,1.6vw,20px);color:var(--ink-2)}
+      .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+      .btn{padding:12px 18px;border-radius:12px;border:1px solid #1456ff33;background:linear-gradient(180deg,#2f7dff,#1f6bff);color:#fff;font-weight:800;letter-spacing:.2px;box-shadow:0 10px 26px #1850c233;cursor:pointer}
+      .btn.alt{background:#ffffff;color:var(--blue-800);border:1px solid #cfe0ff}
+      .hero-media{position:relative;min-height:320px;border-radius:20px;overflow:hidden;background:linear-gradient(160deg,#0a2a6b,#1f6bff);box-shadow:0 20px 60px #0a2a6b33}
+      .media-overlay{position:absolute;inset:0;background:radial-gradient(100% 80% at 60% 10%,#ffffff22 0%,#ffffff00 60%)}
+      .media-caption{position:absolute;left:14px;bottom:14px;background:#ffffffee;color:var(--ink);padding:10px 12px;border-radius:10px;font-size:12px;border:1px solid #e6eeff}
+      .mascot{position:absolute;right:-40px;top:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#9ac3ff,#2b64ff 60%,#0a2a6b 100%);box-shadow:0 12px 50px #2b64ff55;display:grid;place-items:center}
+      .mascot img{width:120px;height:120px;object-fit:cover;border-radius:12px;animation:float 4s ease-in-out infinite;box-shadow:0 8px 22px #2b64ff44}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+      .highlights{max-width:1200px;margin:22px auto 8px;padding:0 20px}
+      .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+      .card{background:#fff;border:1px solid #e3ecff;border-radius:16px;padding:16px;box-shadow:0 10px 24px #2b64ff12}
+      .card h3{margin:2px 0 6px;color:var(--blue-800);font-size:18px}
+      .pill{font-size:12px;background:#eef5ff;padding:4px 8px;border-radius:999px;color:#2b64ff;font-weight:700}
+      .ticker-wrap{margin:26px 0;background:linear-gradient(90deg,var(--blue-900),var(--blue-700));color:#fff}
+      .ticker{max-width:1200px;margin:0 auto;padding:10px 20px;display:flex;gap:24px;align-items:center;overflow:hidden}
+      .ticker label{font-weight:800;letter-spacing:.3px;background:#ffffff22;padding:6px 10px;border-radius:8px}
+      .marquee{white-space:nowrap;display:inline-block;animation:scroll 22s linear infinite}
+      @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+      section{max-width:1200px;margin:30px auto;padding:0 20px}
+      .two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+      .panel{background:#fff;border:1px solid #e3ecff;border-radius:18px;padding:18px;box-shadow:0 10px 26px #2b64ff12}
+      .panel h2{margin:4px 0 8px;color:var(--blue-900)}
+      .form{display:grid;gap:12px}
+      .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+      input,select,textarea{padding:12px 14px;border-radius:12px;border:1px solid #d8e6ff;background:#f9fbff;font:inherit}
+      textarea{min-height:96px}
+      .submit{justify-self:start}
+      footer{margin:40px 0 60px}
+      .foot{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#47618e}
+      .logos{display:flex;gap:10px;align-items:center}
+      .tagchip{background:#eef5ff;border:1px solid #dfe9ff;color:#2b64ff;padding:6px 10px;border-radius:999px;font-weight:700}
+      @media (max-width: 980px){.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}}
+      @media (max-width: 560px){.grid{grid-template-columns:1fr}.hero-wrap{grid-template-columns:1fr}.mascot{right:-20px;top:-20px;width:130px;height:130px}.mascot img{width:96px;height:96px}}
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="logo" aria-label="Jenner House Logo">🐂</div>
+        <div class="brand">
+          Jenner House
+          <span class="badge">Kings InterHigh</span>
+        </div>
+        <div style="margin-left:auto;display:flex;gap:10px">
+          <a class="tagchip" href="#initiatives">Initiatives</a>
+          <a class="tagchip" href="#highlights">Highlights</a>
+          <a class="tagchip" href="#join">Pledge</a>
+          <a class="tagchip" href="https://blogs.finkraft.ai/" target="_blank" rel="noopener">My Blogs (Finkraft.ai)</a>
+        </div>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="hero-wrap">
+        <div>
+          <span class="tag"><span class="dot"></span> Ayesha Anand for Student Council</span>
+          <h1>Bold Blue. Strong as the Bull. United as Jenner.</h1>
+          <p class="sub">A modern campaign for a kinder, braver, more connected Kings InterHigh community — powered by Jenner House pride.</p>
+          <p class="sub" style="margin-top:8px;color:#365487">This section also showcases work and blogs authored/designed by Ayesha Anand, a current intern, with selected posts published at Finkraft.ai.</p>
+          <div class="cta-row">
+            <a class="btn" href="#join">Pledge your support</a>
+            <a class="btn alt" href="#updates">Latest updates</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Campaign media placeholder">
+          <div class="mascot">
+            <div style="font-size: 64px; margin-bottom: 16px;">🐂</div>
+          </div>
+          <div class="media-overlay"></div>
+          <div style="position:absolute;inset:0;display:grid;place-items:center;color:#e9f1ff;text-align:center;padding:20px">
+            <div>
+              <div style="font-weight:800;letter-spacing:.4px;margin-bottom:6px">Photo/Video Placeholder</div>
+              <div style="font-size:13px;opacity:.85">Embed campaign reel or house rally video here</div>
+            </div>
+          </div>
+          <div class="media-caption">Jenner House x Kings InterHigh • Campaign 2025</div>
+        </div>
+      </div>
+      <div class="ticker-wrap" id="updates">
+        <div class="ticker">
+          <label>Campaign News</label>
+          <div class="marquee" aria-live="polite">
+            • 22 Sep: Initiatives page published • House meetup planned this Friday • Volunteers needed for poster design • Pledge target 60/150 • Q&A circle next week • #BoldBlue #JennerStrong
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="highlights" id="highlights">
+      <div class="grid">
+        <div class="card">
+          <span class="pill">Leadership</span>
+          <h3>Every voice matters</h3>
+          <p>Open forums and feedback loops so everyone at Jenner is heard — and helped.</p>
+        </div>
+        <div class="card">
+          <span class="pill">Wellbeing</span>
+          <h3>Kindness first</h3>
+          <p>Peer support, check-ins, and calm spaces to recharge between classes.</p>
+        </div>
+        <div class="card">
+          <span class="pill">Community</span>
+          <h3>House spirit, elevated</h3>
+          <p>Blue Fridays, house challenges, and joint events that bring us together.</p>
+        </div>
+        <div class="card">
+          <span class="pill">Sustainability</span>
+          <h3>Greener choices</h3>
+          <p>Student-led eco drives: recycling, digital notes, and energy-wise habits.</p>
+        </div>
+      </div>
+    </section>
+    <section class="two" id="initiatives">
+      <div class="panel">
+        <h2>About Ayesha</h2>
+        <p>Hi! I’m Ayesha, a Year 11 student at Kings InterHigh and a proud member of Jenner House. I believe in leading with courage, empathy, and action.</p>
+        <ul>
+          <li>Connector: building bridges across classes and houses</li>
+          <li>Listener: turning student feedback into clear steps</li>
+          <li>Doer: small wins weekly, big wins together</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>Signature Initiatives</h2>
+        <ul>
+          <li>Jenner Circles: peer support & idea-sharing, fortnightly</li>
+          <li>Blue Boost: recognition for acts of kindness and teamwork</li>
+          <li>Eco Steps: low-waste notes and digital-first resources</li>
+          <li>Spirit Series: house challenges and collaborative events</li>
+        </ul>
+        <p style="font-size:12px;color:#47618e;margin-top:10px">More details coming soon — placeholder space reserved for embeds and downloads.</p>
+      </div>
+    </section>
+    <section class="two" id="join">
+      <div class="panel">
+        <h2>Pledge your support</h2>
+        <p>Be part of the movement. Add your name and choose how you’d like to help. Your pledge fuels momentum!</p>
+        <form class="form" onsubmit="event.preventDefault(); handlePledge();">
+          <div class="row">
+            <input type="text" name="name" placeholder="Full name" required />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="row">
+            <select name="role" required>
+              <option value="">I am…</option>
+              <option>Jenner student</option>
+              <option>Parent/Guardian</option>
+              <option>Teacher/Staff</option>
+              <option>Alumni</option>
+            </select>
+            <select name="help">
+              <option value="">I can help with…</option>
+              <option>Posters & design</option>
+              <option>Social & outreach</option>
+              <option>Event volunteering</option>
+              <option>Feedback & ideas</option>
+            </select>
+          </div>
+          <textarea name="message" placeholder="Share a message for Ayesha"></textarea>
+          <button type="submit" class="btn submit">Submit pledge</button>
+          <div id="pledge-status" style="font-size:13px;color:#2b64ff"></div>
+        </form>
+      </div>
+      <div class="panel">
+        <h2>Join the team</h2>
+        <p>Get updates, meetups, and opportunities to co-create. We’ll be in touch with the next steps.</p>
+        <ul>
+          <li>Weekly digest with tasks and goals</li>
+          <li>Design sprints and content drops</li>
+          <li>Volunteer shoutouts on the news ticker</li>
+        </ul>
+        <div style="display:flex;gap:10px;margin-top:8px">
+          <a class="btn" href="#updates">See updates</a>
+          <a class="btn alt" href="#highlights">Explore highlights</a>
+        </div>
+      </div>
+    </section>
+    <footer class="foot">
+      <div class="logos">Jenner House • Kings InterHigh</div>
+      <div>© 2025 Ayesha Anand — #BoldBlue #JennerStrong
